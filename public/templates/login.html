@@ -1,0 +1,61 @@
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700" rel="stylesheet">
+          
+
+          <div class="login">
+           <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1 style="font-family: 'Alegreya Sans SC', sans-serif; font-size: 60px;"><img src="../logos/youWrite%20Logo.svg" class="logo"> <br>Login </h1>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="form-top">
+                        		<div class="form-top-left">
+                        		<center>
+                        			<h3>Login and Start Writing</h3>
+                            		<p>Enter your E-mail and password to log on:</p>
+                        		</center>
+                        		</div>
+                        	
+                            </div>
+                            <div class="form-bottom">
+			                    <form class="login-form">
+			                    	<div class="form-group">
+			                    		<label class="sr-only" for="form-username">E-mail</label>
+			                        	<input type="email" ng-model= "user.email" placeholder="E-mail" class="form-username form-control input-lg" id="form-username">
+			                        </div>
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="form-password">Password</label>
+			                        	<input type="password" ng-model= "user.password" placeholder="Password" class="form-password form-control" id="form-password">
+			                        </div>
+			                        <button type="submit" ng-click="emailLogin()" class="btn">Sign in!</button>
+			                    </form>
+		                    </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 social-login">
+                        	<h3>...or login with:</h3>
+                        	<div class="social-login-buttons">
+	                        	<a class="btn btn-link-1 btn-link-1-facebook" ng-click="facebookLogin()">
+	                        		<i class="fa fa-facebook"></i> Facebook
+	                        	</a>
+	                        	<a class="btn btn-link-1 btn-link-1-twitter" ng-click="twitterLogin()">
+	                        		<i class="fa fa-twitter"></i> Twitter
+	                        	</a>
+	                        	<a class="btn btn-link-1 btn-link-1-google-plus" ng-click="googleLogin()">
+	                        		<i class="fa fa-google-plus"></i> Google Plus
+	                        	</a>
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+</div>

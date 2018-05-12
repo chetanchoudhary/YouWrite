@@ -1,0 +1,35 @@
+<div style="margin-top: 62px" class="container-fluid">
+<h1>Write New Posts</h1>
+
+<br> <br>
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group">
+            <input type="text" class="form-control input-lg" placeholder="Your Title goes here..." ng-model = "newBlog.title">
+        </div>
+       
+  
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Sub-heading goes here..." ng-model = "newBlog.subHeading">
+        </div>
+    
+     <div class="form-group">
+            <input type="text" class="form-control" placeholder="Please give a Image link for Header Image" ng-model = "newBlog.headerImage">
+            <button class="btn" ngf-select ng-model="file" name="file" ngf-pattern="'image/*'"
+    ngf-accept="'image/*'">Select</button>
+        </div>
+      
+        
+        <div class="form-group">
+            <text-angular ng-model="newBlog.content"></text-angular>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg pull-right" ng-click="create()">Publish</button>
+    </div>
+    
+    <div class="col-md-4">
+      
+        <div ng-bind-html="newBlog.content"></div>
+    </div>
+    
+</div>
+</div>
